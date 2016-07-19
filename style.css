@@ -1,0 +1,96 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,figure,form,fieldset,input,p,blockquote,th,td,legend {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Cardo', serif;
+}
+h1 {
+    font-family: 'Bevan', serif;
+    font-size: 3.0em;
+}
+p {
+    line-height: 1.4em;
+    margin-bottom: 1.0em;
+}
+a {
+    color: #821122;
+}
+#content {
+    width: 1160px;
+    margin: 0 auto;
+}
+#vis {
+    min-height: 550px;
+}
+#cite {
+    font-size: 0.8em;
+    text-align: right;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+#cite a {
+    background: #e2e2e2;
+    text-decoration: none;
+}
+svg#main-plot {
+
+}
+
+div.controls {
+    float: right;
+}
+
+circle.plain {
+    fill: #ddd;
+}
+
+circle.selected {
+    fill: #d33;
+}
+
+circle.related0 {
+    fill: #ed5;
+}
+
+circle.related1 {
+    fill: #ec5;
+}
+
+circle.related2 {
+    fill: #eb5;
+}
+
+circle.related3 {
+    fill: #ea5;
+}
+
+circle.related4 {
+    fill: #e95;
+}
+
+circle.related5 {
+    fill: #e85;
+}
+
+circle.related6 {
+    fill: #e75;
+}
+
+circle.related7 {
+    fill: #e65;
+}
+
+circle.related8 {
+    fill: #e55;
+}
+
+text {
+    text-anchor: middle;
+    dominant-baseline: central;
+    fill: #444;
+}
+
+text.plain {
+    display: none;
+}

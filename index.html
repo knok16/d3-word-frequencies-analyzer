@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Bevan|Cardo" rel="stylesheet" type="text/css">
+		<script src="app.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="main-wrapper">
+			<div id="content">
+				<h1>Word's frequencies vizualizer</h1>
+				<p>This application provides data visualtization of word's frequencies and its relative frequencies in classic novel of manners <a href="https://www.amazon.com/Pride-Prejudice-Jane-Austen-ebook/dp/B008476HBM">Pride and Prejudice</a> by Jane Austen. Circles represents most common words in book; just hover mouse over one circle and you will see most frequent words encountered after original word (the more circle is red - the more frequent word it represents).</p>
+				<p>On the right side you have controls to amend appearance of the graph. Moreover you can provide any text file for analysis of the same kind.</p>
+				<div id="vis">
+					<svg id="main-plot"></svg>
+					<div class="controls">
+						<h2>Controls</h2>
+						<p>Word limit: <input id="words-limit" value="400" title="Limit number of words chosen for visualization"></p>
+						<p>Related word limit: <input id="related-words-limit" value="30" title="Limit number of related words for highighting"></p>
+						<p>Scale: <input type="range" min="2.5" max="8" step="0.1" id="scale" value="3.2" title="Scale graph for better visual apperance"></p>
+
+						<h2>Custom text file</h2>
+						<p>Text file: <input type="file" id="custom-file" title="Choose custom text file for visualization"></p>
+					</div>
+				</div>
+
+				<div id="cite">Graphic by: <a href="http://github.com/knok16">Veniamin Viflyantsev</a> as 2nd assigment on <a href="https://www.coursera.org/learn/datavisualization">Data Visualization</a> course; 2016</div>
+			</div> 
+		</div>
+	</body>
+</html>
