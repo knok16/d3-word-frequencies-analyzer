@@ -83,7 +83,7 @@ window.onload = function init() {
 		function getEdges(words, wordFrequencies) {
 			var result = {};
 			for (var i = 1; i < words.length; i++) {
-				if (wordFrequencies[words[i - 1]] && wordFrequencies[words[i]]) {
+				if (wordFrequencies[words[i - 1]] > 0 && wordFrequencies[words[i]] > 0) {
 					addConnection(words[i - 1], words[i]);
 				}
 			}
